@@ -25,6 +25,11 @@ header a {
 main {
   flex: 1;
 }
+
+.btn-primary {
+  background-color: #f0c040;
+  color: black;
+}
 .amazona-brand {
   color: #ffffff;
   text-decoration: none;
@@ -48,4 +53,8 @@ main {
 
 .product-info {
   padding: 1rem;
+}
+
+.rating span {
+  color: #ffc000;
 }

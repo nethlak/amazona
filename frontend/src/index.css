@@ -12,13 +12,26 @@ header {
   padding: 1rem;
 }
 
+.site-container {
+  min-height: 100vh;
+}
+
 header a {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
   justify-content: center;
 }
-
+main {
+  flex: 1;
+}
+.amazona-brand {
+  color: #ffffff;
+  text-decoration: none;
+}
+.LinkContainer {
+  color: #ffffff;
+}
 .products {
   display: flex;
 }

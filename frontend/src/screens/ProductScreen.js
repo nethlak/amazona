@@ -8,6 +8,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Badge from 'react-bootstrap/Badge';
 import Button from 'react-bootstrap/Button';
 import Rating from '../components/Rating';
+import LoadingBox from '../components/LoadingBox';
 //import { Helmet } from 'react-helmet-async';
 
 const reducer = (state, action) => {
@@ -50,7 +51,9 @@ function ProductScreen() {
   }, [slug]);
 
   return loading ? (
-    <div>Loading...</div>
+    <div>
+      <LoadingBox />
+    </div>
   ) : error ? (
     <div>{error}</div>
   ) : (

@@ -37,6 +37,12 @@ export default function CartScreen() {
     navigate('/signin?redirect=/shipping');
   };
 
+  const signOutHandler = () => {
+    ctxDispatch({ type: 'USER_SIGNOUT' });
+    localStorage.removeItem('userInfo');
+    localStorage.removeItem('shippingAddress');
+  };
+
   return (
     <div>
       <Helmet>
@@ -126,6 +132,9 @@ export default function CartScreen() {
           </Card>
         </Col>
       </Row>
+      <Button type="button" variant="primary" onClick={signOutHandler}>
+        sign Out
+      </Button>
     </div>
   );
 }

@@ -80,7 +80,8 @@ function App() {
         <main>
           <Container className="mt-3">
             <Routes>
-              <Route path="product/:slug" element={<ProductScreen />} />
+              {/* <Route path="product/:slug" element={<ProductScreen />} /> */}
+              <Route path="/:slug" element={<ProductScreen />} />
               <Route path="/cart" element={<CartScreen />}></Route>
               <Route path="/signin" element={<SigninScreen />}></Route>
               <Route path="/signup" element={<SignupScreen />} />

@@ -12,7 +12,7 @@ import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 import { getError } from '../util';
 import { Store } from '../Store';
-//import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -94,8 +94,9 @@ function ProductScreen() {
         <Col md={3}>
           <ListGroup variant="flush">
             <ListGroup.Item>
-              <title>{product.name}</title>
-
+              <Helmet>
+                <title>{product.name}</title>
+              </Helmet>
               <h1>{product.name}</h1>
             </ListGroup.Item>
             <ListGroup.Item>

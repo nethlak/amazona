@@ -56,6 +56,7 @@ function ProductScreen() {
 
   const { state, dispatch: ctxDispatch } = useContext(Store);
   const { cart } = state;
+  //  The purpose of this line is to extract the cart property from the state object for easier access
 
   const addToCartHandler = async () => {
     const existItem = cart.cartItems.find((x) => x._id === product._id);
@@ -97,6 +98,7 @@ function ProductScreen() {
               <Helmet>
                 <title>{product.name}</title>
               </Helmet>
+
               <h1>{product.name}</h1>
             </ListGroup.Item>
             <ListGroup.Item>

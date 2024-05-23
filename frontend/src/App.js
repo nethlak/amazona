@@ -47,6 +47,7 @@ function App() {
                   {cart.cartItems.length > 0 && (
                     <Badge pill bg="danger">
                       {cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
+                      {/* reduce is an array method that processes each element in the array and reduces it to a single cumulative value */}
                     </Badge>
                   )}
                 </Link>
